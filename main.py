@@ -42,6 +42,32 @@ try:
         print("[9] WIP")
         print()
 
+        ans = int(input("\nYour choice? : "))
+    
+        while True:
+            if ans == 1:
+
+                for q in data:
+                    if q["group"] == "":
+                        print(q[""])
+                        print(q[""])
+                        print(q[""])
+                        print(q[""])
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            _pts =+ 1
+                    
+                
+            elif ans == 2:
+                
+            elif ans == 3:
+                
+            elif ans == 4:
+
+            elif ans == 5:
+
+            elif ans == 6:
+
     exo_pts = 0
     njz_pts = 0
     twc_pts = 0
