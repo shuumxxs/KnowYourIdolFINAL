@@ -19,6 +19,9 @@ try:
         global plv_pts
         global lsf_pts
         global tvq_pts
+        global enh_pts
+        global stk_pts
+        global mtx_pts
         print()
         print("CHOOSE A GROUP!")
         print()
