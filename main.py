@@ -20,7 +20,7 @@ try:
         global lsf_pts
         global tvq_pts
         global enh_pts
-        global stk_pts
+        global skz_pts
         global mtx_pts
         print()
         print("CHOOSE A GROUP!")
@@ -79,6 +79,10 @@ try:
     plv_pts = 0
     lsf_pts = 0
     tvq_pts = 0
+
+    enh_pts = 0
+    skz_pts = 0
+    mtx_pts = 0
 
     print("✧･ﾟ: *✧･ﾟ:*:･ﾟ✧*:･ﾟ✧" * 5)
     print("\n\nWelcome to Know your Idol! \n(Press Enter to continue.)")
