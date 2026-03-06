@@ -8,7 +8,7 @@ try:
     def menu():
         print("[0] START!")
         print("[1] INSTRUCTIONS!")
-        print("[2] CREDITS!")
+        print("[2] SCORE!")
         print("[3] EXIT!")
 
 
@@ -61,7 +61,8 @@ try:
                         if ans == q["correct"]:
                             exo_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
                             
             elif ans == 2:
                 
@@ -76,7 +77,8 @@ try:
                         if ans == q["correct"]:
                             njz_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
                 
             elif ans == 3:
                 
@@ -90,8 +92,9 @@ try:
                         ans = input("Your choice?").upper()
                         if ans == q["correct"]:
                             twc_pts =+ 1
-                            print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                            print("/nCorrect!")
+                        else:
+                            print("/nIncorrect!")
                 
             elif ans == 4:
                 
@@ -106,7 +109,9 @@ try:
                         if ans == q["correct"]:
                             plv_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
+
 
             elif ans == 5:
                 
@@ -121,7 +126,8 @@ try:
                         if ans == q["correct"]:
                             lsf_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
 
             elif ans == 6:
                 
@@ -136,7 +142,8 @@ try:
                         if ans == q["correct"]:
                             tvq_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
             elif ans == 7:
                 
                 for q in data:
@@ -149,8 +156,9 @@ try:
                         ans = input("Your choice?").upper()
                         if ans == q["correct"]:
                             enh_pts =+ 1
-                            print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                            print("/nCorrect!")
+                        else:
+                            print("/nIncorrect!")
             elif ans == 8:
                 
                 for q in data:
@@ -164,7 +172,8 @@ try:
                         if ans == q["correct"]:
                             skz_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
             else:
                 for q in data:
                     if q["group"] == "mtx":
@@ -177,7 +186,22 @@ try:
                         if ans == q["correct"]:
                             mtx_pts =+ 1
                             print("/nCorrect!") 
-                            else print("/nIncorrect!")
+                        else:
+                            print("/nIncorrect!")
+
+    def c1():
+        print("words")
+
+    def c2():
+        global exo_pts
+        global njz_pts
+        global twc_pts
+        global plv_pts
+        global lsf_pts
+        global tvq_pts
+        global enh_pts
+        global skz_pts
+        global mtx_pts
                 
 
     exo_pts = 0
@@ -227,7 +251,7 @@ try:
         else:
             print("invalid input.")
             print("")
-        start_menu()
+        menu()
         ans = int(input("Your choice? "))
 
 
