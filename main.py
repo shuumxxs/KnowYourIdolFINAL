@@ -51,25 +51,134 @@ try:
             if ans == 1:
 
                 for q in data:
-                    if q["group"] == "":
-                        print(q[""])
-                        print(q[""])
-                        print(q[""])
-                        print(q[""])
+                    if q["group"] == "exo":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
                         ans = input("Your choice?").upper()
                         if ans == q["correct"]:
-                            _pts =+ 1
-                    
-                
+                            exo_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+                            
             elif ans == 2:
+                
+                for q in data:
+                    if q["group"] == "njz":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            njz_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
                 
             elif ans == 3:
                 
+                for q in data:
+                    if q["group"] == "twc":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            twc_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+                
             elif ans == 4:
+                
+                for q in data:
+                    if q["group"] == "plv":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            plv_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
 
             elif ans == 5:
+                
+                for q in data:
+                    if q["group"] == "lsf":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            lsf_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
 
             elif ans == 6:
+                
+                for q in data:
+                    if q["group"] == "tvq":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            tvq_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+            elif ans == 7:
+                
+                for q in data:
+                    if q["group"] == "enh":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            enh_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+            elif ans == 8:
+                
+                for q in data:
+                    if q["group"] == "skz":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            skz_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+            else:
+                for q in data:
+                    if q["group"] == "mtx":
+                        print(q["q"])
+                        print(f"[A] {q["A"]}")
+                        print(f"[B] {q["B"]}")
+                        print(f"[C] {q["C"]}")
+                        print(f"[D] {q["D"]}")
+                        ans = input("Your choice?").upper()
+                        if ans == q["correct"]:
+                            mtx_pts =+ 1
+                            print("/nCorrect!") 
+                            else print("/nIncorrect!")
+                
 
     exo_pts = 0
     njz_pts = 0
