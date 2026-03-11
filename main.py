@@ -188,6 +188,7 @@ try:
                             print("/nCorrect!") 
                         else:
                             print("/nIncorrect!")
+            start()
 
     def c1():
         print("words")
@@ -224,35 +225,36 @@ try:
     print("\n\n ")
 
 
-    menu()
-
-    ans = int(input("\nYour choice? : "))
-
-    while True:
-        if ans == 0:
-            c0()
-        elif ans == 1:
-            c1()
-        elif ans == 2:
-            c2()
-        elif ans == 3:
-            print("are you sure? y/n : ")
-            while True:
-                leave = str(input("your choice:"))
-                if leave == "y":
-                    print("Awh man!! okay..")
-                    break
-                elif leave == "n":
-                    print("oh, nevermind!")
-                else:
-                    print("invalid input :,(")
-                break
-
-        else:
-            print("invalid input.")
-            print("")
+    def start():
         menu()
-        ans = int(input("Your choice? "))
+    
+        ans = int(input("\nYour choice? : "))
+    
+        while True:
+            if ans == 0:
+                c0()
+            elif ans == 1:
+                c1()
+            elif ans == 2:
+                c2()
+            elif ans == 3:
+                print("are you sure? y/n : ")
+                while True:
+                    leave = str(input("your choice:"))
+                    if leave == "y":
+                        print("Awh man!! okay..")
+                        break
+                    elif leave == "n":
+                        print("oh, nevermind!")
+                    else:
+                        print("invalid input :,(")
+                    break
+    
+            else:
+                print("invalid input.")
+                print("")
+            menu()
+            ans = int(input("Your choice? "))
 
 
 
