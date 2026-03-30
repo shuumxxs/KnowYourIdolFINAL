@@ -72,7 +72,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                exo_pts =+ 1
+                                exo_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -97,7 +97,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                njz_pts = + 1
+                                njz_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -123,7 +123,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                twc_pts = + 1
+                                twc_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -149,7 +149,7 @@ try:
 
                         while True:
                             if ans == q["correct"]:
-                                plv_pts = + 1
+                                plv_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -175,7 +175,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                lsf_pts = + 1
+                                lsf_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -199,7 +199,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                tvq_pts = + 1
+                                tvq_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -223,7 +223,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                enh_pts = + 1
+                                enh_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -247,7 +247,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                skz_pts = + 1
+                                skz_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
@@ -270,7 +270,7 @@ try:
                         ans = input("Your choice? ").upper()
                         while True:
                             if ans == q["correct"]:
-                                mtx_pts = + 1
+                                mtx_pts += 1
                                 print("\nCorrect!")
                                 break
                             elif ans != q["correct"]:
