@@ -1,16 +1,18 @@
 import json
 
+#Open the JSON file that contains the quiz questions & answers for each group
 try:
     filename = "q.json"
     with open(filename, 'r') as file:
         data = json.load(file)
 
+#Display the options menu for the user to choose
     def menu():
         print("[0] START!")
         print("[1] INSTRUCTIONS!")
         print("[2] EXIT!")
 
-
+#Score counter for each group quiz 
     exo_pts = 0
     njz_pts = 0
     twc_pts = 0
@@ -24,6 +26,7 @@ try:
     mtx_pts = 0
 
 
+#Main quiz game function
     def c0():
         global exo_pts
         global njz_pts
@@ -57,9 +60,12 @@ try:
         print("[9] MONSTA X")
         print()
 
+#Get user k-pop group choice
         ans = int(input("\nYour choice? (strings will end the program!) : "))
-    
+
+#Code for the quiz group questions and answer gameplay
         while True:
+        #Quiz for EXO
             if ans == 1:
 
                 for q in data:
@@ -86,7 +92,7 @@ try:
 
                             
             elif ans == 2:
-                
+                #Quiz for NEWJEANS
                 for q in data:
                     if q["group"] == "njz":
                         print(q["q"])
@@ -112,7 +118,7 @@ try:
 
 
             elif ans == 3:
-                
+                #Quiz for TWICE 
                 for q in data:
                     if q["group"] == "twc":
                         print(q["q"])
@@ -137,7 +143,7 @@ try:
 
 
             elif ans == 4:
-                
+                #Quiz for PLAVE
                 for q in data:
                     if q["group"] == "plv":
                         print(q["q"])
@@ -164,7 +170,7 @@ try:
 
 
             elif ans == 5:
-                
+                #Quiz for LE SSERAFIM 
                 for q in data:
                     if q["group"] == "lsf":
                         print(q["q"])
@@ -188,7 +194,7 @@ try:
                 break
 
             elif ans == 6:
-                
+                #Quiz for TVXQ!
                 for q in data:
                     if q["group"] == "tvq":
                         print(q["q"])
@@ -212,7 +218,7 @@ try:
                 break
 
             elif ans == 7:
-                
+                #Quiz for ENHYPEN 
                 for q in data:
                     if q["group"] == "enh":
                         print(q["q"])
@@ -236,7 +242,7 @@ try:
                 break
 
             elif ans == 8:
-                
+                #Quiz for STRAY KIDS
                 for q in data:
                     if q["group"] == "skz":
                         print(q["q"])
@@ -260,6 +266,7 @@ try:
                 break
 
             elif ans == 9:
+                #Quiz for MONSTA X
                 for q in data:
                     if q["group"] == "mtx":
                         print(q["q"])
@@ -282,6 +289,7 @@ try:
                 print(f"\n                Score: {mtx_pts}/5!")
                 break
 
+#Checking in case of invalid user inputs
             elif ans != int:
                 print("\nNot a valid input!")
                 ans = input("Your choice? ").upper()
@@ -290,7 +298,7 @@ try:
                 print("\nNot a valid input!")
                 ans = input("Your choice? ").upper()
 
-
+#Show the instructions for the quiz game
     def c1():
         print(" ")
         print("INSTRUCTIONS")
@@ -316,7 +324,7 @@ try:
         print("BONUS: It's always better if you play it with the people that make you laugh, so invite your friends to play too!")
         print(" ")
 
-
+#Quiz game welcome screen 
     print("*^-+" * 5)
     print("\n\nWelcome to Know your Idol! \n(Press Enter to continue.)")
     silly = input(": 3 ")
@@ -324,7 +332,7 @@ try:
     print("*^-+" * 5)
 
 
-
+#Main quiz game loop
     while True:
         menu()
 
@@ -376,7 +384,7 @@ try:
 
 
 
-
+#Raised if in case of any JSON file errors
 except FileNotFoundError:
     print("Error: The file 'data.json' was not found.")
 except json.JSONDecodeError as e:
