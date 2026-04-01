@@ -292,7 +292,29 @@ try:
 
 
     def c1():
-        print("words")
+        print(" ")
+        print("INSTRUCTIONS")
+        print("*^-+" * 5)
+        print(" ")
+        print("Guidelines")
+        print("*^-+" * 5)
+        print(" ")
+        print("1.Always pick from only the numbered choices, for example is if the choices are from the numbers 1-9,")
+        print("  avoid picking number like 0, 10 and so on.")
+        print("2.Refrain from putting malicious inputs like swear words, racist jokes and so on.")
+        print("3.When playing alongside friends, always to remember that it's just a quiz game, NOT WW3.")
+        print("4.Don't use strings for integer input or else the game goes BOOM!")
+        print("5.And lastly, don't forget to HAVE FUN!!")
+        print(" ")
+        print("How to Play")
+        print("*^-+" * 5)
+        print(" ")
+        print("1. Once you start the game, you will be shown 9 choices of the creators' favourite k-pop groups")
+        print("2. When you choose a group, you'll be given 5 questions that will show how well you know your k-pop idol.")
+        print("3. After that, the points will be tallied and displayed in the ?/5 format. ")
+        print("4. In the end it will bring you back to the menu and let you repeat the process or just leave. ")
+        print("BONUS: It's always better if you play it with the people that make you laugh, so invite your friends to play too!")
+        print(" ")
 
 
     print("*^-+" * 5)
