@@ -349,9 +349,10 @@ try:
 
                 if leave == "y":
                     print("Awh man!! okay..")
-                    break
+                    sys.exit()
                 elif leave == "n":
                     print("oh, nevermind!")
+                    break
                 else:
                     print("invalid input :,(")
                     leave = input("your choice:")
